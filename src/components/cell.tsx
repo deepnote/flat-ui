@@ -127,8 +127,9 @@ export const Cell = React.memo(function(props: CellProps) {
         >
           <div
             className="line-clamp-9"
-            dangerouslySetInnerHTML={{ __html: stringWithLinks }}
-          />
+          >
+            {stringWithLinks}
+          </div>
         </div>
       )}
     </div>
